@@ -2,6 +2,7 @@ const express =require('express');
 const app=express();
 const path=require('path');
 const routes=require('./route/routes');
+require('dotenv').config();
 
 const PORT=process.env.PORT||3500;
 app.use(express.static('./views'));
